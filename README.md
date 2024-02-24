@@ -32,6 +32,7 @@ Clone the SIGNSense project repository onto your local machine:
 
 ```bash=1
 git clone https://github.com/YourRepository/SIGNSense
+```
 
 Install all the python packages and start backend server. Go into the backend folder and install all pip packages:
 
