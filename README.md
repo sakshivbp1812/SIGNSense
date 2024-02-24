@@ -1,118 +1,37 @@
-# SIGNify
+# SIGNSense: Bridging Worlds
 
 ## Purpose:
 
-This app is an interface where deaf and non-deaf people can easily understand sign language through a graphical context.
+SIGNSense is a groundbreaking application designed to bridge the communication gap between deaf and non-deaf individuals. By leveraging cutting-edge technology, it provides an intuitive interface where users can seamlessly understand sign language through a graphical context. Whether you're deaf or non-deaf, SIGNSense offers a platform for inclusive communication and understanding.
 
 ## Usage & Current Functionality:
 
-To use the application is simple - they have to point the camera to the sign language speaker, and the application will output the text in real time. As a mobile application, users will be able to translate sign language anytime anywhere.
+Using SIGNSense is effortless. Simply point your device's camera towards the sign language speaker, and watch as the application instantly converts the signs into text in real-time. This mobile application empowers users to translate sign language anytime, anywhere, fostering greater accessibility and inclusivity.
 
 ### Home Page
 
-The flutter app has three options for the user on the home page (Login, Register, and Continue as Guest). If the user would like to save and view their history, they would need to authenticated with the application.
+Upon launching SIGNSense, users are greeted with a user-friendly home page offering three options: Login, Register, or Continue as Guest. Authentication allows users to save and access their translation history seamlessly.
 
 ### Login and Register
 
-Users can simply use their email and password to register an account. In the backend, a new firebase user will be created using that information.
-When the user logs in with their credentials, the app will receive an unique userid that can be used to retrive relevant information from the backend.
+Registering an account is straightforward—users can sign up using their email and password, creating a unique profile. Upon logging in, the app generates a unique user ID for personalized access to backend features and translation history.
 
 ### Camera Page
 
-This page allows to record and convert sign language displayed by a person into text that the user can read in real time. The square box will change color to provide feedback based on the confidence score and display helpful messages like "Keep Steady for accurate results".
+The heart of SIGNSense lies in its camera page, where users can record and convert sign language into readable text in real-time. The interface provides visual feedback, adjusting color and providing helpful prompts like "Keep Steady for accurate results" based on the confidence score of translations.
 
 ### Settings Page
 
-Here users are able to customize different options for theme, color, and font-size. They can also perform login/logout actions from settings.
-
-## API Documentation
-
-If testing on deployed website then:
-
-```
-Base URL = https://signify-10529.uc.r.appspot.com/
-```
-
-Otherwise, if testing on localhost then:
-
-```
-Base URL = http://localhost:5000
-```
-
-The base URL will precede all the routes listed below.
-
-### Routes
-
-```
-POST /login
-
-Purpose: Logging in a user
-
-Expected Type: raw JSON
-
-Expected Data: {
-    "username": "user"
-    "password": "user"
-}
-
-Returns: {
-    "id": "uniqueId" (this is firebase userId)
-}
-```
-
-```
-POST /register
-
-Purpose: Creating a new user
-
-Expected Type: raw JSON
-
-Expected Data: {
-    "username": "user"
-    "password": "user"
-}
-
-Returns: {
-    "result": "true/false"
-}
-```
-
-```
-GET /
-
-Purpose: Create integration tests for API
-
-
-Expected Data: None
-
-Returns: "Hello, welcome to the api endpoint for SIGNify!"
-```
-
-```
-POST /upload_video
-
-Purpose: Allows video upload for converting sign language into text
-
-Expected Type: raw JSON + file upload
-
-Expected Data: {
-    "username": "user",
-    "video": "filename"
-}
-
-Returns: {
-    "word": "text"
-}
-```
+Customization is key in SIGNSense. Users can tailor their experience by adjusting theme, color, and font-size preferences. Additionally, they can manage login/logout actions conveniently from the settings menu.
 
 ### Install dependencies and run on your local machine
 
-Emulators, Flutter and Python should be installed on your machine.
-Clone the project onto your local machine.
+To deploy SIGNSense locally, ensure you have emulators, Flutter, and Python installed on your machine. Follow these simple steps:
+
+Clone the SIGNSense project repository onto your local machine:
 
 ```bash=1
-git clone https://github.com/GDSCUTM-CommunityProjects/SIGNify
-```
+git clone https://github.com/YourRepository/SIGNSense
 
 Install all the python packages and start backend server. Go into the backend folder and install all pip packages:
 
