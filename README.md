@@ -31,7 +31,7 @@ To deploy SIGNSense locally, ensure you have emulators, Flutter, and Python inst
 Clone the SIGNSense project repository onto your local machine:
 
 ```bash=1
-git clone https://github.com/YourRepository/SIGNSense
+git clone https://github.com/sakshivbp1812/SIGNSense
 ```
 
 Install all the python packages and start backend server. Go into the backend folder and install all pip packages:
